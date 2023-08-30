@@ -35,6 +35,24 @@ public class EntryController {
         return entryService.findAll();
     }
 
+    @GET
+    @Path("/tags")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Operation(summary = "Index all Entries.", description = "Returns a list of all entries.")
+    public List<Entry> getTags() {
+        return entryService.findAll();
+    }
+
+    @GET
+    @Path("/category")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Operation(summary = "Index all Entries.", description = "Returns a list of all entries.")
+    public List<Entry> getCategory() {
+        return entryService.findAll();
+    }
+
+
+
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)

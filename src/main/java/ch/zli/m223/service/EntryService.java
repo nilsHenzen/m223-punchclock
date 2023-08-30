@@ -38,6 +38,6 @@ public class EntryService {
     @Transactional
     public void update(Entry entry) {
         entityManager.merge(entry);
-    }   
+    }
 
 }
